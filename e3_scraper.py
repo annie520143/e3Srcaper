@@ -25,7 +25,7 @@ driver = webdriver.Chrome(executable_path='./chromedriver.exe')
 #login
 driver.get("https://portal.nycu.edu.tw/#/login?redirect=%2F")
 driver.find_element_by_id('account').send_keys('0616308')
-driver.find_element_by_id('password').send_keys('159357456Annie')
+driver.find_element_by_id('password').send_keys('*')
 driver.find_element_by_class_name('login').click()
 
 portal_handle = driver.current_window_handle
